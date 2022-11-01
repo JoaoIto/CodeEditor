@@ -1,0 +1,23 @@
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 50vh;
+}
+
+.camp{
+    width: 90%;
+}
+
+#save{
+    font-size: 1.1rem;
+   background-color: var(--blue-400); 
+}

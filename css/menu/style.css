@@ -1,0 +1,32 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+    width: 20%;
+}
+
+.title-section{
+    font-size: 1.2rem;
+}
+
+.editor-button__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+    
+    background-color: var(--blue-300);
+}
+
+.editor-button{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.title-button{
+    margin-left: 30px;
+}

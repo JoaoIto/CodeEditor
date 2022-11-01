@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input{
+    font-family: 'Inter', sans-serif;
+    height: 40px;
+    width: 55%;
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 5%;
+    color: #fff;
+}
