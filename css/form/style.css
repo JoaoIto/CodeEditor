@@ -1,11 +1,11 @@
-fieldset{
+fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 50vh;
 }
 
-.form{
+.form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,11 +13,43 @@ fieldset{
     height: 50vh;
 }
 
-.camp{
-    width: 90%;
+.camp {
+        width: 90%;
+        color: #fff;
+        height: 40px;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: var(--light-grey);
 }
 
-#save{
-    font-size: 1.1rem;
-   background-color: var(--blue-400); 
+@media screen and (max-width:800px) {
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 35%;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 95%;
+    }
+    .camp {
+        width: 90%;
+        color: #fff;
+        height: 40px;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: var(--light-grey);
+    }
+
 }

@@ -24,48 +24,53 @@
     </div>
   </header>
   <main>
-    <section class="menu">
-      <h2 class="title-section" id="menu">M E N U</h2>
-      <div class="editor-button">
-        <div class="editor-button__logo">
-          <img height="20" src="./public/VectorCode.svg" alt="Logo de código">
+    <div class="top">
+      <section class="menu">
+        <h2 class="title-section" id="menu">M E N U</h2>
+        <div class="buttons">
+          <div class="editor-button">
+            <div class="editor-button__logo">
+              <img height="20" src="./public/VectorCode.svg" alt="Logo de código">
+            </div>
+            <h3 class="title-button">Editor</h3>
+          </div>
+          <div class="editor-button">
+            <div class="editor-button__logo">
+              <img height="20" src="./public/VectorPeople.svg" alt="Logo de código">
+            </div>
+            <h3 class="title-button">Comunidade</h3>
+          </div>
         </div>
-        <h3 class="title-button">Editor</h3>
-      </div>
-      <div class="editor-button">
-        <div class="editor-button__logo">
-          <img height="20" src="./public/VectorPeople.svg" alt="Logo de código">
+      </section>
+      <section class="editor">
+        <h2 class="title-section">E D I T O R</h2>
+        <div class="editor-back">
+          <div class="code-wrapper">
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
+              console.log("hello World!")}</code>
+          </div>
         </div>
-        <h3 class="title-button">Comunidade</h3>
-      </div>
-    </section>
-    <section class="editor">
-      <div class="editor-back">
-        <div class="code-wrapper">
-        <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
-          console.log("hello World!")}</code>
-        </div>
-      </div>
-      <input type="button" value="Adicionar Highlight" id="highlight">
-    </section>
+        <input type="button" value="Adicionar Highlight" id="highlight">
+      </section>
+    </div>
     <section class="form">
-        <fieldset>
-          <h2 class="title-section">S E U  P R O J E T O</h2>
-          <input class="camp" type="text" placeholder="Nome do projeto:" id="name-project">
-          <input class="camp" type="text" placeholder="Descrição do projeto:" id="desc-project">
-        
-          <h2 class="title-section">P E R S O N A L I Z A Ç Ã O</h2>
+      <fieldset>
+        <h2 class="title-section">S E U P R O J E T O</h2>
+        <input class="camp" type="text" placeholder="Nome do projeto:" id="name-project">
+        <input class="camp" type="text" placeholder="Descrição do projeto:" id="desc-project">
 
-          <select name="" id="" class="camp language">
-            <option value="">HTML</option>
-            <option value="">CSS</option>
-            <option value="">JS</option>
-          </select>
+        <h2 class="title-section">P E R S O N A L</h2>
 
-          <input type="color" name="" id="" class="camp">
+        <select name="" id="" class="camp language">
+          <option value="">HTML</option>
+          <option value="">CSS</option>
+          <option value="">JS</option>
+        </select>
 
-          <input type="button" value="Salvar" id="save" class="camp">
-        </fieldset>
+        <input type="color" name="" id="" class="camp">
+
+        <input type="button" value="Salvar" id="save" class="camp">
+      </fieldset>
     </section>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>

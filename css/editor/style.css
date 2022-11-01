@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 50%;
+    align-items: center;
+    width: 70%;
     height: 70vh;
 }
 
@@ -17,6 +18,14 @@
     background-color: var(--blue-300);
 }
 
+.code-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+}
+
 code{
     display: block;
     padding: .5rem .7rem;
@@ -27,8 +36,29 @@ code{
     white-space: pre-wrap;
 }
 
-#highlight{
-    font-size: 1.1rem;
-    background-color: var(--blue-400);
-    width: 80%;
+@media screen and (max-width:800px){
+    .editor{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    .editor-back{
+        height: 70%;
+    }
+
+    .code-wrapper{
+        display: flex;
+        align-items: center;
+        height: 90%;
+    }
+
+    code{
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        width: 90%;
+        max-width: 80vw;
+        height: 90%;
+    }
 }
