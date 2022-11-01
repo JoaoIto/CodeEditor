@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles/monokai.css">
   <link rel="stylesheet" href="./css/root.css">
   <link rel="stylesheet" href="./css/style.css">
 
@@ -40,7 +41,10 @@
     </section>
     <section class="editor">
       <div class="editor-back">
-        <textarea name="" id="editor" cols="30" rows="10"></textarea>
+        <div class="code-wrapper">
+        <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
+          console.log("hello World!")}</code>
+        </div>
       </div>
       <input type="button" value="Adicionar Highlight" id="highlight">
     </section>
@@ -52,7 +56,7 @@
         
           <h2 class="title-section">P E R S O N A L I Z A Ç Ã O</h2>
 
-          <select name="" id="" class="camp">
+          <select name="" id="" class="camp language">
             <option value="">HTML</option>
             <option value="">CSS</option>
             <option value="">JS</option>
@@ -64,6 +68,8 @@
         </fieldset>
     </section>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script src="./js/highlight.js"></script>
 </body>
 
 </html>

@@ -26,3 +26,7 @@ input::placeholder{
     width: 5%;
     color: #fff;
 }
+
+@media screen and (max-width){
+    
+}

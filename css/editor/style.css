@@ -11,21 +11,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: .6;
     height: 50vh;
     border-radius: 10px;
     background-color: var(--blue-300);
 }
 
-#editor{
-    font-size: 1.2rem;
-    font-weight: bold;
-    resize: none;
-    height: 40vh;
-    width: 80%;
+code{
+    display: block;
+    padding: .5rem .7rem;
+    box-sizing: border-box;
     border-radius: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
+    height: 40vh;
+    width: 30vw;
+    white-space: pre-wrap;
 }
 
 #highlight{
