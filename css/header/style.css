@@ -2,6 +2,8 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 50px;
+    width: 100%;
 }
 
 #search {
@@ -27,7 +29,7 @@ input::placeholder {
     color: #fff;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1300px) {
     header {
         align-items: center;
         justify-content: space-around;

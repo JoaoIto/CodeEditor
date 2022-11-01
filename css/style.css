@@ -35,7 +35,7 @@ input[type=button]{
   border-radius: 10px;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1300px){
   body{
     height: 180vh;
     display: flex;
