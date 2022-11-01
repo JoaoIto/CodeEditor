@@ -7,8 +7,8 @@
 
 ### Desktop
 
-<img src="https://github.com/JoaoIto/AluraEditor/tree/main/public/desktop.png">
+<img src="https://github.com/JoaoIto/AluraEditor/blob/main/public/desktop.png">
 
 ### Mobile
 
-<img src="https://github.com/JoaoIto/AluraEditor/tree/main/public/mobile.png">
+<img src="https://github.com/JoaoIto/AluraEditor/blob/main/public/mobile.png">
