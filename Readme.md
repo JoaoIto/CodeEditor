@@ -12,3 +12,5 @@
 ### Mobile
 
 <img src="https://github.com/JoaoIto/AluraEditor/blob/main/public/mobile.png">
+
+---
