@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/styles/monokai.css">
   <link rel="stylesheet" href="./css/root.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   <link rel="shortcut icon" href="./public/devLogo.png" type="image/x-icon">
   <title>Alura Coder</title>
@@ -29,7 +30,7 @@
         <h2 class="title-section" id="menu">M E N U</h2>
         <div class="buttons">
           <div class="editor-button">
-            <div class="editor-button__logo">
+            <div class="editor-button__logo active">
               <img height="20" src="./public/VectorCode.svg" alt="Logo de código">
             </div>
             <h3 class="title-button">Editor</h3>
@@ -67,14 +68,52 @@
           <option value="">JS</option>
         </select>
 
-        <input type="color" name="" id="" class="camp">
+        <input type="color" name="" id="color" class="camp" onchange=" changeColor()">
 
         <input type="button" value="Salvar" id="save" class="camp">
       </fieldset>
     </section>
   </main>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <h2 class="title-section">C A R D S</h2>
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="editor-back">
+          <div class="code-wrapper">
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
+              console.log("hello World!")}</code>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="editor-back">
+          <div class="code-wrapper">
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
+              console.log("hello World!")}</code>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="editor-back">
+          <div class="code-wrapper">
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
+              console.log("hello World!")}</code>
+          </div>
+        </div>
+      </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
   <script src="./js/highlight.js"></script>
+  <script src="./js/color.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>

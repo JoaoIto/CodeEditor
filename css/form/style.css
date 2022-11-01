@@ -8,9 +8,9 @@ fieldset {
 .form {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 20%;
-    height: 50vh;
+    height: 55vh;
 }
 
 .camp {

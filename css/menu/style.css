@@ -24,9 +24,12 @@
     height: 50px;
     width: 50px;
     border-radius: 30%;
-    background-color: var(--blue-300);
+    background-color: var(--blue-200);
 }
 
+.active{
+  background-color: var(--blue-400);
+}
 .editor-button{
     width: 90%;
     display: flex;

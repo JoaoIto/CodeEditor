@@ -1,0 +1,23 @@
+.swiper {
+    height: 500px;
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.swiper-slide {
+    height: 400px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:1300px) {
+    .swiper{
+        width: 90%;
+    }
+    .swiper-slide {
+        width: 90%;
+    }
+}
