@@ -5,3 +5,10 @@
 ## O que é?
 **Se trata basicamente de um editor de código, que será feito com sintaxe highlight para mostrar colorido e identado, e posteriormente podendo salvá-lo para um banco de dados da sessão do browser, e assim mostrá-lo em outra página...**
 
+### Desktop
+
+<img src="https://github.com/JoaoIto/AluraEditor/tree/main/public/desktop.png">
+
+### Mobile
+
+<img src="https://github.com/JoaoIto/AluraEditor/tree/main/public/mobile.png">
