@@ -36,10 +36,10 @@
             <h3 class="title-button">Editor</h3>
           </div>
           <div class="editor-button">
-            <div class="editor-button__logo">
-              <img height="20" src="./public/VectorPeople.svg" alt="Logo de código">
-            </div>
-            <h3 class="title-button">Comunidade</h3>
+              <div class="editor-button__logo">
+                <img height="20" src="./public/VectorPeople.svg" alt="Logo de código">
+              </div>
+              <h3 class="title-button" href="">Projetos</h3>
           </div>
         </div>
       </section>
@@ -80,28 +80,6 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">
-        <div class="editor-back">
-          <div class="code-wrapper">
-            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
-              console.log("hello World!")}</code>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="editor-back">
-          <div class="code-wrapper">
-            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
-              console.log("hello World!")}</code>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="editor-back">
-          <div class="code-wrapper">
-            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
-              console.log("hello World!")}</code>
-          </div>
         </div>
       </div>
     </div>
@@ -113,6 +91,12 @@
   <script src="./js/color.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    window.onload = () => {
+      swiper();
+    }
+  </script>
 </body>
 
 </html>
