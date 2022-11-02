@@ -24,10 +24,12 @@ function montaCard() {
   card.classList.add("code-wrapper");
   background.appendChild(card);
 
+  const preview = document.createElement("pre");
   const code = document.createElement("code");
   code.classList.add("preview");
   code.classList.add("hljs");
+  preview.appendChild(code)
   code.innerHTML = codeEditor.innerHTML;
-  card.appendChild(code);
+  card.appendChild(preview);
   swiper();
 }
