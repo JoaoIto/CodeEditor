@@ -1,25 +1,79 @@
 .swiper {
-    height: 500px;
+    height: 600px;
     width: 50%;
-    margin-top: 50px;
 }
 
-.title-section{
+.title-section {
     text-align: center;
 }
+
 .swiper-slide {
-    height: 400px;
+    padding-top: 20px;
+    height: 70%;
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.card {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title-project {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.desc-project {
+    max-height: 70%;
+}
+
+.lang-project {
+    font-weight: bold;
+}
+
 @media screen and (max-width:1300px) {
-    .swiper{
+    .swiper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 60%;
         width: 90%;
     }
+
+    .title-project {
+        height: 60px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .card {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-self: center;
+        width: 70%;
+        height: 35%;
+        border-radius: 10px;
+        padding: 5%;
+        margin: 2%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
     .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
         width: 90%;
     }
 }

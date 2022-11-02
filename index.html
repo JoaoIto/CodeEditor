@@ -36,10 +36,10 @@
             <h3 class="title-button">Editor</h3>
           </div>
           <div class="editor-button">
-              <div class="editor-button__logo">
-                <img height="20" src="./public/VectorPeople.svg" alt="Logo de código">
-              </div>
-              <h3 class="title-button" href="">Projetos</h3>
+            <div class="editor-button__logo">
+              <img height="20" src="./public/VectorPeople.svg" alt="Logo de código">
+            </div>
+            <h3 class="title-button" href="">Projetos</h3>
           </div>
         </div>
       </section>
@@ -47,22 +47,25 @@
         <h2 class="title-section">E D I T O R</h2>
         <div class="editor-back">
           <div class="code-wrapper">
-            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">const pluckDeep =
+              key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
               const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-              
+
               const unfold = (f, seed) => {
-                const go = (f, seed, acc) => {
-                  const res = f(seed)
-                  return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                }
-                return go(f, seed, [])
+              const go = (f, seed, acc) => {
+              const res = f(seed)
+              return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])
               }</code>
           </div>
         </div>
         <input type="button" value="Adicionar Highlight" id="highlight">
       </section>
     </div>
+  </main>
+  <div class="down">
     <section class="form">
       <fieldset>
         <h2 class="title-section">S E U P R O J E T O</h2>
@@ -82,36 +85,41 @@
         <input type="button" value="Salvar" id="save" class="camp">
       </fieldset>
     </section>
-  </main>
-  <!-- Slider main container -->
-  <div class="swiper">
-    <h2 class="title-section">C A R D S</h2>
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <div class="editor-back">
-          <div class="code-wrapper">
-            <code class="preview hljs" contenteditable="false" aria-label="Editor de code">function teste(){
-              console.log("Hello World!")}</code>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <h2 class="title-section">C A R D S</h2>
+      <!-- Additional required wrapper -->
+      
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card">
+            <h4 class="title-project">AluraFlix</h4>
+            <p class="desc-project">Esse é o projeto de uma netflix feito em React.js</p>
+            <span class="lang-project">JS</span>
+          </div>
+          <div class="editor-back">
+            <div class="code-wrapper">
+              <code class="preview hljs" contenteditable="false" aria-label="Editor de code">function teste(){
+                console.log("Hello World!")}</code>
+            </div>
           </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-  <script src="./js/highlight.js"></script>
-  <script src="./js/color.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/swiper.js"></script>
-  <script src="./js/main.js"></script>
-  <script>
-    window.onload = () => {
-      swiper();
-    }
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="./js/highlight.js"></script>
+    <script src="./js/color.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      window.onload = () => {
+        swiper();
+      }
+    </script>
 </body>
 
 </html>
