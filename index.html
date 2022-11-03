@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/styles/monokai.css">
+  <link rel="stylesheet" href="./css/themes/monokai.css">
   <link rel="stylesheet" href="./css/root.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -47,18 +47,7 @@
         <h2 class="title-section">E D I T O R</h2>
         <div class="editor-back">
           <div class="code-wrapper">
-            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">const pluckDeep =
-              key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-              const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-              const unfold = (f, seed) => {
-              const go = (f, seed, acc) => {
-              const res = f(seed)
-              return res ? go(f, res[1], acc.concat([res[0]])) : acc
-              }
-              return go(f, seed, [])
-              }</code>
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor"></code>
           </div>
         </div>
         <input type="button" value="Adicionar Highlight" id="highlight">
@@ -109,6 +98,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
+  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <script src="./js/highlight.js"></script>
     <script src="./js/color.js"></script>

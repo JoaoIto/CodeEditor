@@ -1,16 +1,14 @@
 .menu{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 30vh;
-    width: 20%;
+    justify-content: space-evenly;
+    height: 18vh;
+    width: 70%;
 }
 
 .buttons{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 90%;
+    height: 50%;
 }
 
 .title-section{
@@ -33,6 +31,7 @@
 .editor-button{
     width: 90%;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 

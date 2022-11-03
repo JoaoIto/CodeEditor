@@ -3,7 +3,7 @@ const save = document.querySelector("#save");
 save.addEventListener("click", (event) => {
   event.preventDefault();
   montaCard();
-  console.log(event)
+  console.log(event);
 });
 
 function montaCard() {
@@ -14,7 +14,7 @@ function montaCard() {
   slide.classList.add("swiper-slide");
   slides.prepend(slide);
 
-  console.log(slides)
+  console.log(slides);
 
   const background = document.createElement("div");
   background.classList.add("editor-back");
@@ -28,7 +28,7 @@ function montaCard() {
   const code = document.createElement("code");
   code.classList.add("preview");
   code.classList.add("hljs");
-  preview.appendChild(code)
+  preview.appendChild(code);
   code.innerHTML = codeEditor.innerHTML;
   card.appendChild(preview);
   swiper();

@@ -2,7 +2,10 @@
 Monokai style - ported by Luigi Maselli - http://grigio.org
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 .hljs {
+    font-family: 'Source Code Pro', monospace;
     background: #000620;
     color: #ddd;
   }
