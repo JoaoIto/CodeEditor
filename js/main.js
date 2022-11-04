@@ -58,6 +58,6 @@ function buildCard() {
   languageCard.classList.add("lang-project");
   languageCard.innerText = languageValue;
   card.appendChild(languageCard);
-
+  highlight();
   swiper();
 }
