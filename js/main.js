@@ -1,35 +1,63 @@
-const save = document.querySelector("#save");
-
+let save = document.querySelector("#save");
+let slide = document.createElement("div");
 save.addEventListener("click", (event) => {
   event.preventDefault();
-  montaCard();
-  console.log(event);
+  buildCard();
 });
 
-function montaCard() {
+function buildCard() {
   const codeEditor = document.querySelector("#editor");
 
-  const slides = document.querySelector(".swiper-wrapper");
-  const slide = document.createElement("div");
+  let slides = document.querySelector(".swiper-wrapper");
   slide.classList.add("swiper-slide");
   slides.prepend(slide);
 
   console.log(slides);
-
-  const background = document.createElement("div");
+  let color = document.getElementById("color");
+  let colorValue = color.value;
+  let background = document.createElement("div");
   background.classList.add("editor-back");
+  background.style.backgroundColor = colorValue;
   slide.appendChild(background);
 
-  const card = document.createElement("div");
-  card.classList.add("code-wrapper");
-  background.appendChild(card);
+  let wrapper = document.createElement("div");
+  wrapper.classList.add("code-wrapper");
+  background.appendChild(wrapper);
 
-  const preview = document.createElement("pre");
-  const code = document.createElement("code");
+  let preview = document.createElement("pre");
+  let code = document.createElement("code");
   code.classList.add("preview");
   code.classList.add("hljs");
   preview.appendChild(code);
   code.innerHTML = codeEditor.innerHTML;
-  card.appendChild(preview);
+  wrapper.appendChild(preview);
+
+  let name = document.getElementById("name-project");
+  let desc = document.getElementById("desc-project");
+  let languageInput = document.getElementById("language");
+  
+
+  let nameValue = name.value;
+  let descValue = desc.value;
+  let languageValue = languageInput.options[languageInput.selectedIndex].text;
+
+  let card = document.createElement("div");
+  card.classList.add("card");
+  slide.appendChild(card);
+
+  let title = document.createElement("h4");
+  title.classList.add("title-project");
+  title.innerText = nameValue;
+  card.appendChild(title);
+
+  let description = document.createElement("p");
+  description.innerText = descValue;
+  card.appendChild(description);
+
+  let languageCard = document.createElement("span");
+  languageCard.classList.add("lang-project");
+  languageCard.innerText = languageValue;
+  card.appendChild(languageCard);
+
   swiper();
 }

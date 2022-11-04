@@ -47,7 +47,8 @@
         <h2 class="title-section">E D I T O R</h2>
         <div class="editor-back">
           <div class="code-wrapper">
-            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor"></code>
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de code" id="editor">function teste(){
+              console.log("Hello World!")}</code>
           </div>
         </div>
         <input type="button" value="Adicionar Highlight" id="highlight">
@@ -58,18 +59,18 @@
     <section class="form">
       <fieldset>
         <h2 class="title-section">S E U P R O J E T O</h2>
-        <input class="camp" type="text" placeholder="Nome do projeto:" id="name-project">
-        <input class="camp" type="text" placeholder="Descrição do projeto:" id="desc-project">
+        <input class="camp" type="text" placeholder="Nome do projeto:" id="name-project" value="">
+        <input class="camp" type="text" placeholder="Descrição do projeto:" id="desc-project" value="">
 
         <h2 class="title-section">P E R S O N A L</h2>
 
-        <select name="" id="" class="camp language">
+        <select name="" id="language" class="camp language">
           <option value="">HTML</option>
           <option value="">CSS</option>
           <option value="">JS</option>
         </select>
 
-        <input type="color" name="" id="color" class="camp" onchange=" changeColor()">
+        <input type="color" name="#5081FB" id="color" value="" class="camp" onchange=" changeColor()">
 
         <input type="button" value="Salvar" id="save" class="camp">
       </fieldset>

@@ -1,6 +1,7 @@
 .swiper {
     height: 600px;
-    width: 50%;
+    width: 60%;
+    order: 1;
 }
 
 .title-section {
@@ -10,15 +11,18 @@
 .swiper-slide {
     padding-top: 20px;
     height: 60%;
-    width: 20%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+code{
+    width: 90%;
+}
 .card {
-    order: 2;
+    order: 1;
     height: 35%;
     display: flex;
     flex-direction: column;
