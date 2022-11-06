@@ -1,4 +1,4 @@
-# Alura Editor
+# [CodeEditor-Alura](https://joaoito.github.io/CodeEditor/)
 
 **O Alura Editor é um projeto de challenge, desenvolvido nas primeiras versões de challenges front-end na Alura, na qual os estudantes são desafiados a desenvolverem uma aplicação do zero, usando o que sabem e o que podem descobrir de front-end e por aí vamos de código!**
 
